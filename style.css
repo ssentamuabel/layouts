@@ -84,6 +84,7 @@ body{
     background:#ebe9e9;
     width: 100%;
     padding: 1rem;
+    
 }
 
 .header--wrapper img{
@@ -102,6 +103,7 @@ body{
     background-color: #fff;
     border-radius: 10px;
     padding:10px 2rem;
+    margin-bottom:20px;
 
 }
 
@@ -146,3 +148,166 @@ body{
 
 
 /*   ****card container******   */
+.card--container{
+    background-color: #fff;
+    padding:2rem;
+    border-radius:10px;
+}
+
+.card--wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap:1rem;
+}
+
+.main-title{
+    color:rgba(113, 99, 186, 255);
+    padding-bottom: 10px;
+    font-size: 15px;
+
+}
+.payment--card{
+    background:rgb(229, 223, 233);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width:290px;
+    height:150px;
+    display:flex; 
+    flex-direction:column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.payment--card:hover{
+    transform:translateY(-5px);
+}
+
+.card--header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.amount{
+    display:flex;
+    flex-direction:column;
+}
+.title{
+    font-size:12px;
+    font-weight:200;
+
+}
+.amount--value{
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+
+}
+
+.icon{
+    color:#fff;
+    padding: 1rem;
+    height: 60px;
+    width:60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background:red;
+}
+.card--details{
+    font-size: 18px;
+    color:#777777;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/*  **** Color CSS******* */
+.light-red {
+    background:rgb(251, 233, 233);
+}
+
+.light-purple {
+    background: rgb(254, 236, 254);
+   
+}
+
+.light-green{
+    background:rgb(235, 254, 235);
+}
+
+.light-blue{
+    background:rgb(234, 235, 254);
+}
+
+.dark-red{
+    background-color: red;
+}
+.dark-purple{
+    background-color: purple;
+}
+.dark-blue{
+    background-color: blue;
+}
+.dark-green{
+    background-color: green;
+}
+
+
+
+
+
+/*   **** Tabular Section******   */
+
+.tabular--wrapper{
+    background-color: #fff;
+    margin-top:1rem;
+    border-radius: 10px;
+    padding:2rem;
+}
+.table--container{
+    width:100%;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+thead{
+    background-color: rgba(113,89, 186, 255);
+    color:#fff;
+}
+th{
+    padding:15px;
+    text-align: left;
+}
+tbody{
+    background-color: #f2f2f2;
+}
+
+td{
+    padding:15px;
+    font-size: 15px;
+    color:#333;
+}
+tr:nth-child(even){
+    background: #fff;
+
+}
+tfoot{
+    background: rgba(113, 99, 186, 255);
+    font-weight:bold;
+    color:#fff;
+}
+
+tfoot td{
+    padding:15px;
+    color:#fff;
+}
+
+.table--container button{
+    color:green;
+    background:none;
+    cursor:pointer;
+
+}
