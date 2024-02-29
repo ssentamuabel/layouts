@@ -21,7 +21,8 @@
     height: 100vh;
     padding:15px;
     transition: all 0.5s linear;
-    background: rgba(113, 99, 186, 255);
+   
+    background: rgba(16, 17, 38, 255);
 }
 
 .sidebar:hover{
@@ -32,8 +33,14 @@
 .logo{
     height:60px;
 }
+.logo img{
+    width:65px;
+    height: 65px;
+    
+}
 
 .menu-wrapper{
+    margin-top:1.2em;
     position:relative;
     height:88vh;
     list-style: none;
@@ -41,6 +48,7 @@
 }
 
 .menu-wrapper li{
+   
     padding:15px;       
     border-radius: 8px;
     transition: all 0.5s ease-in;
@@ -49,7 +57,7 @@
 
 }
 .menu-wrapper li:hover, #active{
-    background-color: rgb(151, 142, 199);
+    background-color: rgb(78, 74, 102);
 }
 
 #logout{
@@ -85,24 +93,34 @@
 /* ************Main body styles ************************** */
 
 .main-body{
-    padding:20px;
+    /* padding:20px; */
     position:relative;
     width:100%;
     background: #ebe9e9;
 }
 
 .header{
-    padding:0;background: black;
+    padding:0;
+    background: black;
     color:black;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
     padding:15px;
-    border-radius: 8px;
+    margin-left: 5px;
+    align-items: center;
+    
     
 }
+
 .header-title{
-    color:rgba(113, 99, 186, 255)
+    color: rgba(16, 17, 38, 255);
+}
+.header-title h4{
+    margin-top:8px;
+}
+.header-title h4 span{
+    color:red;
 }
 
 .user-info{
@@ -115,9 +133,10 @@
 }
 
 .user-info img{
-    height:50px;
-    width:50px;
-    border-radius: 30px;
+    height:65px;
+    width:65px;
+    
+    border: 1px solid red;
 }
 
 .user-info .search{
@@ -125,6 +144,39 @@
     background: #ebe9e9;
     border-radius: 20px;
 }
+
+
+.submenu{
+    background-color: rgba(16, 17, 38, 255);
+    padding:1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.submenu span{
+    color:#fff;
+}
+.submenu .right ul{
+   
+    list-style: none;
+    display: flex;
+    
+}
+.submenu .right ul li{
+    padding-left: 1rem;
+   
+    text-transform: uppercase;
+    color:#fff;
+}
+.submenu .right ul li a{
+    text-decoration: none;
+}
+
+
+
+
+
+
 .search i{
     font-size: 1rem;
     cursor: pointer;
